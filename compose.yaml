@@ -1,0 +1,10 @@
+services:
+  watcher:
+    build: .
+    init: true
+    restart: unless-stopped
+    volumes:
+      - ./inbox:/app/inbox
+      - ./processed:/app/processed
+      - ./error:/app/error
+      - ./data:/app/data

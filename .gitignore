@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+data/*
+!data/.gitkeep
+inbox/*
+!inbox/.gitkeep
+processed/*
+!processed/.gitkeep
+error/*
+!error/.gitkeep
