@@ -345,21 +345,3 @@ For example, if each file averages **200 KB**, the target rate amounts to
 about **33.3 MB/sec** of raw input and **2.88 TB/day** (decimal units), before
 replication, database overhead, logging, or retention. The average file size
 is an assumption, not supplied in the assessment.
-
-## 10. Publish to GitHub
-
-The assessment asks for a public repository. This archive contains all source
-files, but publication must be done using your own GitHub account:
-
-```bash
-git init
-git add .
-git commit -m "Implement asynchronous telemetry watcher"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/distributed-data-watcher.git
-git push -u origin main
-```
-
-Create the empty public repository on GitHub first, then replace the URL with
-your real repository URL. Do not commit runtime `data/` or processed sensor
-files; `.gitignore` excludes these directories' contents.
